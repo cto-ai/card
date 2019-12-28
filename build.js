@@ -25,7 +25,7 @@ const data = {
   github: chalk.gray('https://github.com/') + chalk.green('cto-ai'),
   linkedin: chalk.gray('https://linkedin.com/company/') + chalk.blue('cto-ai'),
   web: chalk.cyan('https://CTO.ai'),
-  npx: chalk.grey('ops run') + ' ' + chalk.white('@cto.ai/npx cto-ai/card') + ' '+chalk.grey('(via Ops CLI)'),
+  npx: chalk.grey('ops run') + ' ' + chalk.white('@cto-ai/npx cto-ai/card') + ' '+chalk.grey('(via Ops CLI)'),
   labelWork: chalk.white.bold('    Mission:'),
   labelOpenSource: chalk.white.bold('Open Source:'),
   labelSponsoring: chalk.white.bold('Sponsorship:'),
