@@ -15,18 +15,20 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('               Tierney Cyren'),
-  handle: chalk.white('bitandbang'),
-  work: chalk.white('Senior Cloud Developer Advocate at Microsoft'),
-  opensource: chalk.white('Node.js Community Committee ') + chalk.green('⬢'),
-  twitter: chalk.gray('https://twitter.com/') + chalk.cyan('bitandbang'),
-  npm: chalk.gray('https://npmjs.com/') + chalk.red('~bnb'),
-  github: chalk.gray('https://github.com/') + chalk.green('bnb'),
-  linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('bitandbang'),
-  web: chalk.cyan('https://bnb.im'),
-  npx: chalk.red('npx') + ' ' + chalk.white('@bnb/card  (via GitHub Package Registry)'),
-  labelWork: chalk.white.bold('       Work:'),
+  name: chalk.white('               CTO.ai'),
+  handle: chalk.white('Build, Share & Run Developer Workflows.'),
+  work: chalk.white('Build really great developer experiences.'),
+  opensource: chalk.white('We ♥ Open Source and sponsor 10x developers. '),
+  sponsoring: chalk.white('Contact us if you are looking for sponsorship!'),
+  twitter: chalk.gray('https://twitter.com/') + chalk.cyan('cto_ai'),
+  npm: chalk.gray('https://npmjs.com/') + chalk.red('~cto.ai'),
+  github: chalk.gray('https://github.com/') + chalk.green('cto-ai'),
+  linkedin: chalk.gray('https://linkedin.com/company/') + chalk.blue('cto-ai'),
+  web: chalk.cyan('https://CTO.ai'),
+  npx: chalk.grey('ops run') + ' ' + chalk.white('@cto.ai/npx cto-ai/card') + ' '+chalk.grey('(via Ops CLI)'),
+  labelWork: chalk.white.bold('    Mission:'),
   labelOpenSource: chalk.white.bold('Open Source:'),
+  labelSponsoring: chalk.white.bold('Sponsorship:'),
   labelTwitter: chalk.white.bold('    Twitter:'),
   labelnpm: chalk.white.bold('        npm:'),
   labelGitHub: chalk.white.bold('     GitHub:'),
@@ -40,6 +42,7 @@ const newline = '\n'
 const heading = `${data.name} / ${data.handle}`
 const working = `${data.labelWork}  ${data.work}`
 const opensourcing = `${data.labelOpenSource}  ${data.opensource}`
+const sponsoring = `${data.labelSponsoring}  ${data.sponsoring}`
 const twittering = `${data.labelTwitter}  ${data.twitter}`
 const npming = `${data.labelnpm}  ${data.npm}`
 const githubing = `${data.labelGitHub}  ${data.github}`
@@ -51,7 +54,8 @@ const carding = `${data.labelCard}  ${data.npx}`
 const output = heading + // data.name + data.handle
                newline + newline + // Add one whole blank line
                working + newline + // data.labelWork + data.work
-               opensourcing + newline + newline + // data.labelOpenSource + data.opensource
+               opensourcing + newline + // data.labelOpenSource + data.opensource
+               sponsoring + newline + newline +
                twittering + newline + // data.labelTwitter + data.twitter
                npming + newline + // data.labelnpm + data.npm
                githubing + newline + // data.labelGitHub + data.github
